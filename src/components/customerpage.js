@@ -26,7 +26,6 @@ function CustomerPage() {
         fetchWorkouts(), []);
 
     const deleteWorkout = id => {
-        console.log(id)
         if (window.confirm('Are you sure?')) {
             fetch('https://customerrest.herokuapp.com/api/trainings/' + id, {
                 method: 'DELETE'
@@ -71,8 +70,8 @@ function CustomerPage() {
                 {   headerName: '',
                     width: 70,
                     field: '',
-                cellRendererFramework: params => <button type="button" className="btn btn-danger" onClick={() => deleteWorkout(params.data.id)}><Trash/></button>
-                },     
+                cellRendererFramework: (params) => <button type="button" className="btn btn-danger" onClick={() => deleteWorkout(params.data.id)}><Trash/></button>
+                }     
             ]);
         
             return (
