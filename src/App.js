@@ -17,7 +17,7 @@ import People from 'react-bootstrap-icons/dist/icons/people';
 import Calendar from 'react-bootstrap-icons/dist/icons/calendar';
 import Watch from 'react-bootstrap-icons/dist/icons/stopwatch';
 
-
+//main app
 function App() {
 
     return (
