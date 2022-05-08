@@ -22,7 +22,7 @@ function CustomerPage() {
             .catch(e => console.error(e))
     }
     
-    React.useEffect(() => 
+    useEffect(() => 
         fetchWorkouts(), []);
     //deleting workout
     const deleteWorkout = id => {

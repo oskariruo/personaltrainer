@@ -24,7 +24,7 @@ function TrainerPage() {
             .catch(e => console.error(e))
     }
     
-    React.useEffect(() => 
+    useEffect(() => 
         fetchCustomers(), []);
     
         // deleting Customer
