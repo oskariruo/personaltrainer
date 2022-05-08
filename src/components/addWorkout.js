@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form'
 import Modal from 'react-bootstrap/Modal'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-
+//function for adding a new workout
 function AddWorkout(props) {
     const [training, setWorkout] = useState({
         date: '',

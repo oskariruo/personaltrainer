@@ -37,7 +37,7 @@ const AddCustomer = (props) => {
 
     return (
         <div>
-            <Button variant="info" style={{ marginTop: 20, marginLeft:"20px", padding:"15px" }} onClick={handleClickOpen}>Add <Plus/></Button>
+            <Button variant="info" style={{marginTop: 20, marginLeft:"20px", padding:"10px", fontSize:"20px" }} onClick={handleClickOpen}>Add <Plus/></Button>
 
             <Offcanvas show={open} onHide={handleClose} placement='start'>
                     <Offcanvas.Header closeButton>

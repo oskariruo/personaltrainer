@@ -13,7 +13,7 @@ function CustomerPage() {
 
     const [workouts, setWorkouts] = useState([]);
 
-    
+    //fetching workouts
     const fetchWorkouts = () => {
         fetch('https://customerrest.herokuapp.com/gettrainings')
             .then(response => response.json())
@@ -24,7 +24,7 @@ function CustomerPage() {
     
     React.useEffect(() => 
         fetchWorkouts(), []);
-
+    //deleting workout
     const deleteWorkout = id => {
         if (window.confirm('Are you sure?')) {
             fetch('https://customerrest.herokuapp.com/api/trainings/' + id, {

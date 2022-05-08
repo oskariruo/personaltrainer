@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Gear from 'react-bootstrap-icons/dist/icons/gear-fill';
-
+//function for editing customer details
 function EditCustomer(props) {
 
     const [open, setOpen] = useState(false);
@@ -142,11 +142,11 @@ function EditCustomer(props) {
                             </Form.Group>
                         </Row>
 
-                        <Button variant="dark" onClick={handleSave} style={{ color: "white", fontWeight: '600', fontSize: '20px', marginTop: '10px', padding: '10px', background: 'gray-dark', width: '120px' }}>
+                        <Button variant="success" onClick={handleSave} style={{fontWeight: '600', fontSize: '20px', marginTop: '10px', padding: '10px', width: '120px' }}>
                             Save
                         </Button>
 
-                        <Button variant="secondary" onClick={handleClose} style={{ color: "white", fontWeight: '600', fontSize: '20px', marginTop: '10px', padding: '10px', background: 'gray-dark', width: '120px', marginLeft: '25%' }}>
+                        <Button variant="danger" onClick={handleClose} style={{fontWeight: '600', fontSize: '20px', marginTop: '10px', padding: '10px', width: '120px', marginLeft: '20px' }}>
                             Cancel
                         </Button>
 

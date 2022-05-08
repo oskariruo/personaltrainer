@@ -6,6 +6,8 @@ import EditCustomer from "./editCustomer";
 import "ag-grid-community/dist/styles/ag-grid.css";
 import "ag-grid-community/dist/styles/ag-theme-dark.css";
 
+import { CSVLink } from 'react-csv';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import Trash from 'react-bootstrap-icons/dist/icons/trash-fill';
 
@@ -13,6 +15,7 @@ function TrainerPage() {
     
     const [customers, setCustomers] = useState([]);
 
+    // fetching Customer data
     const fetchCustomers = () => {
         fetch('https://customerrest.herokuapp.com/api/customers')
             .then(response => response.json())
@@ -23,7 +26,8 @@ function TrainerPage() {
     
     React.useEffect(() => 
         fetchCustomers(), []);
-
+    
+        // deleting Customer
         const deleteCustomer = href => {
             if (window.confirm('Are you sure?')) {
                 fetch(href, {
@@ -40,6 +44,7 @@ function TrainerPage() {
             }
         }
 
+        //adding a new Customer
         const addCustomer = customer => {
             console.log(customer.data)
             fetch('https://customerrest.herokuapp.com/api/customers', {
@@ -59,6 +64,7 @@ function TrainerPage() {
 
         }
 
+        //editing a existing Customer
         const editCustomer = (url, updatedCustomer) => {
             fetch(url, {
                 method: 'PUT',
@@ -76,6 +82,7 @@ function TrainerPage() {
                 .catch(e => console.log(e))
         }
 
+        // adding a Workout
         const addWorkout = workout => {
             alert(workout);
             fetch('https://customerrest.herokuapp.com/api/trainings', {
@@ -132,7 +139,8 @@ function TrainerPage() {
         return (
             <div >
                 <div>
-                
+                <CSVLink style={{ marginLeft: '20px', color: "gray", fontSize: '20px', padding: '10px', background: 'white', width: '230px', borderRadius: '5px' }} data={customers} separator=";">Export CSV</CSVLink>
+
                 <div className="ag-theme-dark" style={{ width: '100%', height: 520, fontWeight: '700', lineHeight: '44px', fontSize: '19px', paddingTop: '10px' }}>
                     <AgGridReact
                         rowData={customers}
