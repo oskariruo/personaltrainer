@@ -20,11 +20,11 @@ Here's the main screen for all of the workouts. The workouts can be filtered, or
 
 Here's the customers screen showing all of the current customer data. Customer workouts can be added and modified:
 
-<img src="./screenshots/SaveWorkout.png" width="300">
+<img src="./screenshots/AddWorkout.png" width="300">
 
 and new customers can be added:
 
-<img src="./screenshots/SaveCustomer.png" width="300">
+<img src="./screenshots/AddCustomer.png" width="300">
 
 The calendar shows all of the workouts:
 
