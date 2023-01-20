@@ -34,5 +34,7 @@ The statistics show the popularity of current workouts:
 
 <img src="./screenshots/StatisticsScreen.png" width="300">
 
+Thanks for checking out my project!
+
 
 
