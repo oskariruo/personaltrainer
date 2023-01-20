@@ -21,7 +21,7 @@ function WorkoutCalendar() {
     cloneElement(Children.only(children), {
       style: {
         backgroundColor: 'lightblue',
-      },
+      }
     })
 
   const events = trainings.map(event => ({
