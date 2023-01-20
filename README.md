@@ -28,11 +28,11 @@ and new customers can be added:
 
 The calendar shows all of the workouts:
 
-<img src="./screenshots/CalendarScreen.png" width="300">
+<img src="./screenshots/Calendar_Screen.png" width="300">
 
 The statistics show the popularity of current workouts:
 
-<img src="./screenshots/StatisticsScreen.png" width="300">
+<img src="./screenshots/Statistics_Screen.png" width="300">
 
 Thanks for checking out my project!
 
